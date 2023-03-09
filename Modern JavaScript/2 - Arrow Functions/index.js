@@ -25,6 +25,7 @@ console.log(`Subtração arrow: ${arrowSub(10, 6)}`);
 const arrowDouble = (n) => `O dobro de ${n} é ${n * 2}`;
 console.log(arrowDouble(12));
 
+//Modelo arrow com filter
 const towns = ["Prontera", "Izlude", "Payon", "Alberta", "Geffen", "Morroc"];
 
 const startingWithP = towns.filter((town) => town[0] === "P");
