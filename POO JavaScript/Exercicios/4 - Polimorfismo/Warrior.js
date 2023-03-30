@@ -19,7 +19,7 @@ class Warrior extends Character {
 
   atackMove(character) {
     if (this.position === "atack") {
-      character.healthPoints = this.atackPoints - character.defensePoints;
+      character.healthPoints = character.defensePoints - this.atackPoints;
     } else {
       console.log("Posição de defesa, nenhum ataque efetuado!");
     }

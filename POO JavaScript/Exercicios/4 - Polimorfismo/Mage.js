@@ -8,12 +8,12 @@ class Mage extends Character {
 
   atackMove(character) {
     character.healthPoints =
-      this.atackPoints + this.magicPoints - character.defensePoints;
+      character.defensePoints - this.atackPoints + this.magicPoints;
 
     console.log(
       `Dano causado: ${
         this.atackPoints + this.magicPoints
-      }\n: Vida restante do ${character.name}: ${character.healthPoints}`
+      }:\n Vida restante do ${character.name}: ${character.healthPoints}`
     );
   }
 

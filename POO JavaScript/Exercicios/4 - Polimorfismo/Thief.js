@@ -1,9 +1,8 @@
 const Character = require("./Character");
 
 class Thief extends Character {
-
   atackMove(character) {
-    character.healthPoints = 2 * this.atackPoints - character.defensePoints;
+    character.healthPoints = character.defensePoints - 2 * this.atackPoints;
 
     console.log(
       `Dano causado: ${this.atackPoints}\n: Vida restante do ${character.name}: ${character.healthPoints}`
