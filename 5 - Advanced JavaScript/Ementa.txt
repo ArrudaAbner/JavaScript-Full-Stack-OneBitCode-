@@ -1,0 +1,11 @@
+O que aprendi nesse módulo?
+
+1 - Tratamento de erros
+
+2 - Expressões Regulares
+
+3 - Programação Assíncrona
+
+4 - Promises
+
+5 - Requisições HTTP
