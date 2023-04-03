@@ -1,5 +1,5 @@
 //função assync
-/* async function asyncSum(a, b) {
+async function asyncSum(a, b) {
   return a + b;
 }
 
@@ -17,11 +17,10 @@ Promise.all([sumResult, subtractResult])
   .catch((err) => {
     console.log(err);
   });
- */
 
-const numbers = [4, 5, 9, 13, 77];
+/* const numbers = [4, 5, 9, 13, 77];
 
- function asyncSquare(x) {
+function asyncSquare(x) {
   return Math.pow(x, 2);
 }
 
@@ -32,3 +31,4 @@ Promise.all(numbers.map((number) => asyncSquare(number)))
   .catch((err) => {
     console.log(err);
   });
+ */
