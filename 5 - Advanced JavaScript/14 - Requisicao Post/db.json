@@ -11,6 +11,18 @@
       "title": "Requisições POST com Javascript",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
       "author": "Isaac"
+    },
+    {
+      "title": "Aprendendo JS",
+      "author": "Abner",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "id": 3
+    },
+    {
+      "title": "Meu quarto artigo",
+      "author": "Abner",
+      "content": "esté um texto de exemplo.",
+      "id": 4
     }
   ]
 }
