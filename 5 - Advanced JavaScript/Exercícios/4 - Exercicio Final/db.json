@@ -1,0 +1,19 @@
+{
+  "transactions": [
+    {
+      "name": "Salário",
+      "amount": 1800,
+      "id": 1
+    },
+    {
+      "name": "Faculdade",
+      "amount": -430,
+      "id": 2
+    },
+    {
+      "name": "Inglês",
+      "amount": -297,
+      "id": 3
+    }
+  ]
+}
