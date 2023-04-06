@@ -5,3 +5,4 @@ enum Planets {
   MARTE,
 }
 
+Planets.TERRA
