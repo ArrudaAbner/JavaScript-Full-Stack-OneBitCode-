@@ -1,5 +1,6 @@
 const spaceships = [];
 
+//1º função do exercicio
 function addSpaceship(name: string, pilot: string, crewLimit: number) {
   const spaceship = {
     name,
@@ -8,7 +9,6 @@ function addSpaceship(name: string, pilot: string, crewLimit: number) {
     crew: [],
     inMission: false,
   };
-  spaceship.name.toLocaleLowerCase();
   spaceships.push(spaceship);
 
   alert(
@@ -16,6 +16,7 @@ function addSpaceship(name: string, pilot: string, crewLimit: number) {
   );
 }
 
+//função auxiliar para achar nave
 function findSpaceship(name: string) {
   let spaceship: {
     name: string;
@@ -30,6 +31,7 @@ function findSpaceship(name: string) {
   return spaceship;
 }
 
+//2º função
 function addCrewMember(
   member: string,
   spaceship: { name: string; crewLimit: number; crew: string[] }
@@ -42,6 +44,7 @@ function addCrewMember(
   }
 }
 
+//3º função
 function sendInMission(spaceship: {
   name: string;
   crewLimit: number;
@@ -57,6 +60,8 @@ function sendInMission(spaceship: {
     alert(`${spaceship.name} foi enviada para a missão!`);
   }
 }
+
+//Menus
 
 function firstMenuOption() {
   const name = prompt("Qual é o nome da nave a ser registrada?");
@@ -135,9 +140,7 @@ function fourthMenuOption() {
   alert(list);
 }
 
-/**
- * Menu
- */
+//Loop do Menu
 
 let userOption = 0;
 
