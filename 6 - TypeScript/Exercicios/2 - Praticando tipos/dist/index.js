@@ -6,8 +6,14 @@ function createPlanet(name, coord, situation, satelites) {
         situation,
         satelites,
     };
-    planets.push(planet);
-    alert(`Planeta ${name} com a situação de: ${situation}!`);
+    const confirmation = confirm(`Deseja criar o planeta ${planet.name} com a situação de ${planet.situation}?`);
+    if (confirmation) {
+        planets.push(planet);
+        alert(`Planeta ${planet.name} criado com sucesso!`);
+    }
+    else {
+        alert("Criação abortada!");
+    }
     return planet;
 }
 function findPlanet(name) {
@@ -69,43 +75,19 @@ function showPlanets() {
     let list = "Planetas Registrados:\n";
     planets.forEach((planet) => {
         list += `
-      Planeta: ${planet.name}\n
-      Coordenadas: ${planet.coord}\n,
-      Situação: ${planet.situation}\n,
-      Satelites: ${planet.satelites}\n
+      Planeta: ${planet.name}
+      Coordenadas: ${planet.coord},
+      Situação: ${planet.situation},
+      Satelites: ${planet.satelites}
     `;
     });
     alert(list);
 }
-function createMenu() {
-    let option;
-    option = Number(prompt(`
-  Menu: \n
-  1 - Criar planeta
-  2 - Atualizar situação do planeta
-  3 - Adicionar satelite
-  4 - Remover satelite
-  5 - Listar os planetas
-  `));
-    switch (option) {
-        case 1:
-            let name = prompt("Qual o nome do Planeta?");
-            let coord1 = Number(prompt("Informe a 1º coordenadas: "));
-            let coord2 = Number(prompt("Informe a 2º coordenadas: "));
-            let coord3 = Number(prompt("Informe a 3º coordenadas: "));
-            let coord4 = Number(prompt("Informe a 4º coordenadas: "));
-            let coord;
-            coord.push(coord1, coord2, coord3, coord4);
-            let situation = prompt("Qual a situação do planeta? \nHabitado | Habitável | Inabitável | Inexplorado");
-            if (situation === "Habitado" ||
-                situation === "Habitável" ||
-                situation === "Inabitável" ||
-                situation === "Inexplorado") {
-                createPlanet(name, coord, situation, []);
-            }
-            else {
-                alert("Situação inválida, verifique novamente!");
-            }
-    }
-}
-createMenu();
+//Criar planeta
+const terra = createPlanet("Terra", [12, 12, 12, 12], "Habitado", []);
+//adicionar o satélite
+addSatelite(terra, "Terra", "Lua");
+//remover o satélite
+removeSatelite(terra, "Terra", "Lua");
+//mostrar os planetas no console
+console.log(showPlanets());
